@@ -1,1 +1,3 @@
-from api import app  # noqa: F401
+from api import app
+
+__all__ = ["app"]
