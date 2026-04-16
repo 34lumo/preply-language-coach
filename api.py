@@ -16,6 +16,7 @@ Run:
 """
 
 import json
+import os
 from pathlib import Path
 from typing import List, Optional
 
@@ -40,13 +41,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-CACHE_DIR = Path("cache")
-CACHE_DIR.mkdir(exist_ok=True)
-
-# Serve the React SPA at /
-@app.get("/", include_in_schema=False)
-def frontend():
-    return FileResponse("static/index.html")
+CACHE_DIR = Path(os.environ.get("CACHE_DIR", "/tmp/cache"))
+CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 # ─── Preset conversations ─────────────────────────────────────────────────────
 #
