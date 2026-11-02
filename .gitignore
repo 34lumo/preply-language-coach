@@ -1,19 +1,19 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-.env
 venv/
 .venv/
 
-# Secrets / credentials (never commit — copy from *.example)
+# Secrets (copy start.bat.example -> start.bat and fill it in locally)
+.env
 start.bat
 check_db.bat
 
-# Cache / generated
+# Generated / cache
 cache/
+*_rich.json
 
-# Audio files (large binaries)
+# Audio recordings
 *.wav
 *.mp3
 *.m4a
@@ -21,9 +21,12 @@ cache/
 # Frontend
 frontend/node_modules/
 frontend/dist/
+frontend/.vite/
 
-# Misc
-.claude/
-api.txt
-*.docx
-implementation_plan.md.resolved
+# Vercel
+.vercel/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

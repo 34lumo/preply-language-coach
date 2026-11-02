@@ -1,4 +1,9 @@
-import db, json
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import db
 
 for student in ['student-1', 'student-2']:
     rows = db.get_history(student, limit=10)
