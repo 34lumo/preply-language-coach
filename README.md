@@ -4,7 +4,7 @@ Post-lesson analytics for language tutors: feed it the Deepgram transcripts of a
 
 ![Landing page: a scroll-driven 3D sequence that introduces the twelve metrics, here Talk Ratio](docs/screenshots/landing.png)
 
-Built for the Preply Hackathon 2026. Vercel project: https://preplyfinal.vercel.app (frontend only; the analysis API needs the API keys below).
+Built for the Preply Hackathon 2026.
 
 ## What it is
 
@@ -24,7 +24,7 @@ The import screen with the presets. Picking one runs the pipeline (about 20 s) a
 
 ## Stack
 
-Python 3.10+, FastAPI, Deepgram SDK, Anthropic SDK, psycopg2. Frontend: Vite, React 19, TypeScript, Tailwind CSS v4, Framer Motion, ECharts. Deployed on Vercel.
+Python 3.10+, FastAPI, Deepgram SDK, Anthropic SDK, psycopg2. Frontend: Vite, React 19, TypeScript, Tailwind CSS v4, Framer Motion, ECharts.
 
 ## Run it
 
